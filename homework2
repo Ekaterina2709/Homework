@@ -1,0 +1,110 @@
+// Задача 10: Напишите программу, 
+// которая принимает на вход трёхзначное 
+// число и на выходе показывает вторую цифру этого числа.
+
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+// int CutNumber() 
+// {
+// Console.Write("Введите трехзначное число: " );
+// int num = Convert.ToInt32(Console.ReadLine());
+//    if ( num<100 || num >1000) 
+//        {Console.WriteLine("- это число не трехзначное: ");
+//        return 0;
+//        } 
+//    else
+//          {
+//          int dec = num / 100;
+//          int ed = num % 10;
+//          int result = ((num-(dec*100))-ed)/10;
+//          return result;
+//           }
+//     }
+//       int number = CutNumber();
+//       Console.WriteLine(+ number);
+
+// Задача 13: Напишите программу, 
+// которая выводит третью цифру 
+// заданного числа или сообщает, 
+// что третьей цифры нет.
+
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+
+//это мое решение
+ 
+// int CutNumber() 
+// {
+// Console.Write("Введите число: " );
+// int num = Convert.ToInt32(Console.ReadLine());
+//    if ( num<100 ) 
+//        {Console.WriteLine("- третьей цифры нет");
+//        return 0;
+//        } 
+    
+//  if  (num<1000)   
+//       { 
+//          int dec1 = (num / 100)*100;  
+//          int des1 = ((num-dec1)/10)*10;  
+//          int result1 = (num-dec1-des1); 
+//          return result1;
+//       }
+//  if (num<10000 )
+//       {
+//       int dec2 = (num / 100)*100;  
+//       int result2 = ((num-dec2)/10)*10/10;  
+//       return result2;
+//       }   
+//  if (num<100000 )
+//       {
+//       int dec3 = (num / 1000)*1000;  
+//       int result3 = ((num-dec3)/100)*100/100;
+//       return result3;
+//       }   
+// else 
+// {
+//     Console.WriteLine("Число слишком большое");
+//     return 0;
+// }      
+// }
+//       int number = CutNumber();
+//       Console.WriteLine(+number);
+
+// это решение нашла в интернете. 
+//Здесь цифры переводят в текст? и каждую цифру считают сначала потом выводят? не понятно
+// Console.Write("Введи число: ");
+// int anyNumber = Convert.ToInt32(Console.ReadLine());
+// string anyNumberText = Convert.ToString(anyNumber);
+// if (anyNumberText.Length > 2){
+//   Console.WriteLine("третья цифра -> " + anyNumberText[2]);
+// }
+// else {
+//   Console.WriteLine("-> третьей цифры нет");
+
+// Задача 15: Напишите программу, 
+// которая принимает на вход цифру, 
+// обозначающую день недели, и проверяет, 
+// является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+// void day(int a){
+//     if(a == 6 | a == 7){
+//         Console.WriteLine("да");
+//     }
+    
+//      if (a>7) 
+//        {Console.WriteLine("- Такого дня недели нет");} 
+//     else{
+//         Console.WriteLine("нет");
+//     }
+// }
+
+// Console.WriteLine("Введите порядковый номер дня недели (учитывая 1 - это пн, 7 - это вс: ) ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// day(a);
