@@ -1,0 +1,109 @@
+// SЗадача 19
+// Напишите программу, которая принимает 
+// на вход пятизначное число и проверяет, 
+// является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+    
+//   void CutNumber() 
+// {
+// Console.Write("Введите пятизначное число: " );
+// int num = Convert.ToInt32(Console.ReadLine());
+// if ( num<10000 | num>=100000) Console.WriteLine("- Это не пятизначное число");    
+           
+//       int result5 = (num-(num / 100)*100-((num-(num / 100)*100)/10)*10); 
+//       int result4 = ((num-(num / 100)*100)/10)*10/10;  
+//       int result2 = ((num-(num / 10000)*10000)/1000)*1000/1000;
+//       int result1 = ((num-(num / 100000)*100000)/10000)*10000/10000;
+// if  (result5==result1 && result4==result2)
+//        { Console.WriteLine("Число является палиндромом ");
+       
+//        }    
+
+// else 
+// {
+//     Console.WriteLine("Число не является палиндромом");
+//    }  
+    
+// }
+// CutNumber();
+      
+      
+
+// Console.Write("Введите пятизначное число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// string Text = Convert.ToString(num);
+// int length = Text.Length; 
+// if (length>5)
+// {
+//     Console.WriteLine("Число не является пятизначным");
+//      }
+// else if (length<5)
+// {
+//     Console.WriteLine("Число не является пятизначным");
+//      }
+
+// else if (Text[0] == Text[4] || Text[1] == Text[3]) 
+// {
+//      Console.WriteLine("Да число палиндром");
+// }
+// else {
+// Console.WriteLine("Нет число палиндромом не является");
+// }
+
+// Задача 21
+
+// Напишите программу, которая принимает 
+// на вход координаты двух точек и находит 
+// расстояние между ними в 3D пространстве.
+
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+
+// void Func(int xa, int ya, int za, int xb, int yb, int zb)
+// {
+// double S1 = xb-xa;
+// double S2 = yb-ya;
+// double S3 = zb-za;
+// double S = Math.Sqrt(S1*S1+S2*S2+S3*S3);
+// {
+//    Console.WriteLine($"Расстояние между точками А и В  {S}"); 
+// } 
+// }
+// Console.Write("Введите координату x для точки А: ");
+// int xa = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату y для точки А: ");
+// int ya = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату z для точки А: ");
+// int za = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату x для точки В: ");
+// int xb = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату y для точки В: ");
+// int yb = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату z для точки В: ");
+// int zb = Convert.ToInt32(Console.ReadLine());
+
+// Func(xa,ya,za,xb,yb,zb);
+
+// Задача 23
+
+// Напишите программу, которая принимает 
+// на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+// void Square(int n){
+//     int cub = 1;
+//     while(cub<=n){
+//         Console.Write(cub*cub*cub + ", ");
+//         cub++;
+//     }
+// }
+
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num <= 0) Console.Write("Некорректный ввод");
+// else Square(num);
